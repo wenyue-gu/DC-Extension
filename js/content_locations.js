@@ -24,6 +24,17 @@ function ShowOriginalEggs() {
     });
 }
 
+
+function labelRarity(element, key) {
+	if (RARITY[key] != undefined) {
+		switch (RARITY[key].rarity) {
+			case 'Uncommon':    element.style = 'background-color:'+SILVER; break;
+			case 'Rare':        element.style = 'background-color:'+GOLD; break;
+			case 'Mythic Rare': element.style = 'background-color:'+RED; break;
+		}
+	}
+}
+
 function handleGetEggByDescriptionResponse(response, imgElement, spanElement) {
     if (response.error !== '') {
         console.log(response);
@@ -34,6 +45,8 @@ function handleGetEggByDescriptionResponse(response, imgElement, spanElement) {
         imgElement.removeAttribute('width');
         imgElement.removeAttribute('height');
         // imgElement.style.border = "10px solid blue";
+        // ShowEggId(spanElement,RARITY['e11.png'].rarity)
+        labelRarity(spanElement,response.result.src.split("images/")[1])
     }
 }
 
