@@ -64,6 +64,6 @@ function createTextElement(value = '') {
     e = document.createElement('span');
     e.innerText = value;
     e.style.relative = 'absolute';
-    e.style.backgroundColor = '#ffffb3';
+    // e.style.backgroundColor = '#ffffb3';
     return e;
 }

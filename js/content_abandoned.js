@@ -56,6 +56,6 @@ function createTextElement(value = '') {
     e.style.relative = 'absolute';
     // e.style.marginLeft = '-32px'; 
     e.style.marginTop = '25px';
-    e.style.backgroundColor = '#ffffb3';
+    // e.style.backgroundColor = '#ffffb3';
     return e;
 }
