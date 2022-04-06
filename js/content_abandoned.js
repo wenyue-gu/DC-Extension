@@ -1,4 +1,5 @@
 // ※init
+
 let eggs = [...document.querySelectorAll('.spr')].map(e => e.parentNode);
 // e.g.
 // <a href="abandoned/{egg_id}/...">
@@ -7,7 +8,7 @@ let eggs = [...document.querySelectorAll('.spr')].map(e => e.parentNode);
 
 eggs.forEach(e => {
     // e.addEventListener('mouseenter', ShowEggId);
-    // e.addEventListener('mouseenter', ShowEggLineage);
+    e.addEventListener('mouseenter', ShowEggLineage);
     // e.addEventListener('mouseleave', HideEggId);
     ShowEggId(e)
 });
@@ -19,6 +20,17 @@ function ShowEggId(e) {
         return;
     }
     let textEggId = createTextElement(id);
+    let idvals = id.replace("0", "o").toLowerCase()
+    // if(id ==="4kqe0" || id ==="3KOAJ"|| id ==="B7B2x"|| id ==="aD8nc"|| id ==="ecLJZ"|| id ==="TISU1"|| id ==="XEeeB"){
+    //     e.click()
+    // }
+    if(FOURLETTER.indexOf(idvals.substring(0,3))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
+        textEggId = createTextElement(id, 'yellow');
+    }
+
+    if(FIVELETTER.includes(idvals) || isNum(id)){
+        textEggId = createTextElement(id, 'red');
+    }
     e.appendChild(textEggId);
 }
 
@@ -49,7 +61,7 @@ function parseEggId(url) {
     return u.pathname.split('/')[2];
 }
 
-function createTextElement(value = '') {
+function createTextElement(value = '', background = '') {
     let e;
     e = document.createElement('span');
     e.innerText = value;
@@ -57,5 +69,9 @@ function createTextElement(value = '') {
     // e.style.marginLeft = '-32px'; 
     e.style.marginTop = '25px';
     // e.style.backgroundColor = '#ffffb3';
+    e.style.backgroundColor = background
     return e;
 }
+
+
+
