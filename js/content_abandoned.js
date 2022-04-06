@@ -30,7 +30,7 @@ function ShowEggId(e) {
     // if(id ==="4kqe0" || id ==="3KOAJ"|| id ==="B7B2x"|| id ==="aD8nc"|| id ==="ecLJZ"|| id ==="TISU1"|| id ==="XEeeB"){
     //     e.click()
     // }
-    if(FOURLETTER.indexOf(idvals.substring(0,3))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
+    if(FOURLETTER.indexOf(idvals.substring(0,4))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
         textEggId = createTextElement(id, 'yellow');
     }
 

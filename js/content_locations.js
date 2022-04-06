@@ -65,7 +65,7 @@ function ShowEggId(e) {
     }
     let textEggId = createTextElement(id);
     let idvals = id.replace("0", "o").toLowerCase()
-    if(FOURLETTER.indexOf(idvals.substring(0,3))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
+    if(FOURLETTER.indexOf(idvals.substring(0,4))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
         textEggId = createTextElement(id, 'yellow');
     }
     // if(FOURLETTER.inlcudes(val2)){
