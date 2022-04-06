@@ -1,4 +1,4 @@
-# Which-Egg-Is-Which
+# DC-extension
 ## Overview
 ![](/demo.gif)
 
@@ -19,9 +19,6 @@ Reference for developer:
 ## Credit
 Images source from: https://dragcave.fandom.com/wiki/Dragon_Cave_Wiki
 
-## License
-```
-Copyright (c) 2019-2022 islu. 
 
-Use MIT License.
-```
+## Note
+This is a modification on the original Which egg is which extension, which can be found via https://github.com/islu/Which-Egg-Is-Which. It is modified to better suit my own need, which includes show all egg codes on page and check against a reference word list for potential word codes.
