@@ -1,10 +1,10 @@
 # DC-extension
-## Overview
-![](/demo.gif)
 
 ### Features
-- Replace the hidden egg with the original one.
-- Hover on abandoned egg can show name code.
+- Replace the hidden egg in biomes with the original one.
+- Show all codes upon entering a biome or the abandoned page
+- Highlights rare eggs in biomes with image checks (modify the rarity.js in order to change what is rare for you)
+- Highlights potential 4 and 5 word codes (o/0 replacement on) and number codes
 
 ### How To Use
 To load chrome extension in Chrome:
