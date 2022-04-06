@@ -18,6 +18,7 @@ Reference for developer:
 
 ## Credit
 Images source from: https://dragcave.fandom.com/wiki/Dragon_Cave_Wiki
+Word list source from: https://www.allscrabblewords.com/
 
 
 ## Note
