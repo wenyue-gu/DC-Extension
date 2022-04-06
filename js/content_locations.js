@@ -25,12 +25,19 @@ function ShowOriginalEggs() {
 }
 
 
-function labelRarity(element, key) {
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+function labelRarity(element, key, toClick) {
 	if (RARITY[key] != undefined) {
 		switch (RARITY[key].rarity) {
 			case 'Uncommon':    element.style = 'background-color:'+SILVER; break;
 			case 'Rare':        element.style = 'background-color:'+GOLD; break;
-			case 'Mythic Rare': element.style = 'background-color:'+RED; break;
+			case 'Mythic Rare': 
+                element.style = 'background-color:'+RED; 
+                toClick.click()
+                break;
 		}
 	}
 }
@@ -46,7 +53,7 @@ function handleGetEggByDescriptionResponse(response, imgElement, spanElement) {
         imgElement.removeAttribute('height');
         // imgElement.style.border = "10px solid blue";
         // ShowEggId(spanElement,RARITY['e11.png'].rarity)
-        labelRarity(spanElement,response.result.src.split("images/")[1])
+        labelRarity(spanElement,response.result.src.split("images/")[1], imgElement)
     }
 }
 
@@ -64,7 +71,8 @@ function ShowEggId(e) {
     // if(FOURLETTER.inlcudes(val2)){
     //     textEggId = createTextElement(id, 'yellow');
     // }
-    if(FIVELETTER.includes(idvals) || isNum(id)){
+    if(FIVELETTER.includes(idvals) || isNumeric(id)){
+        e.click()
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);

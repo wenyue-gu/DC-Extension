@@ -14,6 +14,12 @@ eggs.forEach(e => {
 });
 
 // ※functions
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+
 function ShowEggId(e) {
     const id = parseEggId(e.href);
     if (id === undefined) {
@@ -28,7 +34,8 @@ function ShowEggId(e) {
         textEggId = createTextElement(id, 'yellow');
     }
 
-    if(FIVELETTER.includes(idvals) || isNum(id)){
+    if(FIVELETTER.includes(idvals) || isNumeric(id)){
+        e.click()
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);
