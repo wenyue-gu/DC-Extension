@@ -26,7 +26,7 @@ function ShowEggId(e) {
         return;
     }
     let textEggId = createTextElement(id);
-    let idvals = id.replace("0", "o").toLowerCase()
+    let idvals = id.replace("0", "o").replace("0", "o").replace("0", "o").replace("0", "o").replace("0", "o").toLowerCase()
     // if(id ==="4kqe0" || id ==="3KOAJ"|| id ==="B7B2x"|| id ==="aD8nc"|| id ==="ecLJZ"|| id ==="TISU1"|| id ==="XEeeB"){
     //     e.click()
     // }

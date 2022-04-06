@@ -22,4 +22,4 @@ Word list source from: https://www.allscrabblewords.com/
 
 
 ## Note
-This is a modification on the original Which egg is which extension, which can be found via https://github.com/islu/Which-Egg-Is-Which. It is modified to better suit my own need, which includes show all egg codes on page and check against a reference word list for potential word codes.
+This is a modification on the original Which egg is which extension, which can be found via https://github.com/islu/Which-Egg-Is-Which. It is modified to better suit my own need, which includes show all egg codes on page and check against a reference word list for potential word codes. *The word codes list might not be complete, I just had trouble finding a more complete list so I used the first one I came across. For example, "butt" was not a word in this four letter list, to my surprise*
