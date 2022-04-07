@@ -3992,4 +3992,8 @@ const FOURLETTER =[
     'dick',
     'butt',
     'jedi',
+    'loki',
+    'thor',
+    'elsa',
+    'adam',
     ]

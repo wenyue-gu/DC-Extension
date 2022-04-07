@@ -28,7 +28,7 @@ function ShowEggId(e) {
     //     e.click()
     // }
     if(FOURLETTER.indexOf(idvals.substring(0,4))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
-        // e.click()
+        e.click()
         textEggId = createTextElement(id, 'yellow');
     }
 

@@ -27,6 +27,6 @@ const RARITY = {
 	'e177.gif': { 'rarity': 'Rare', },
 	'e187.png': { 'rarity': 'Rare', },
 	'e190.png': { 'rarity': 'Rare', },
-	'e208.png': { 'rarity': 'Rare', },
+	'e208.png': { 'rarity': 'Mythic Rare', },
 	'Leetle_Tree.gif': { 'rarity': 'Rare', },
 }
