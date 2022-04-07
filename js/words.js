@@ -8914,6 +8914,20 @@ const FIVELETTER=[
     'zouks',
     'zowie',
     'zuzim',
-    'zymes'
+    'zymes',
+
+    'kylin',
+    'wuxie',
+    'drwho',
+    'steve',
+    'james',
+    'dicks',
+    'sherl',
+    'darth',
+    'vader',
+    'spidy',
+    'lokes',
+    'moran',
+    'mordo',
     ]
     

@@ -25,10 +25,6 @@ function ShowOriginalEggs() {
 }
 
 
-function isNumeric(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-  }
-
 function labelRarity(element, key, toClick) {
 	if (RARITY[key] != undefined) {
 		switch (RARITY[key].rarity) {
@@ -36,7 +32,7 @@ function labelRarity(element, key, toClick) {
 			case 'Rare':        element.style = 'background-color:'+GOLD; break;
 			case 'Mythic Rare': 
                 element.style = 'background-color:'+RED; 
-                // toClick.click()
+                toClick.click()
                 break;
 		}
 	}
@@ -74,8 +70,8 @@ function ShowEggId(e) {
     // if(FOURLETTER.inlcudes(val2)){
     //     textEggId = createTextElement(id, 'yellow');
     // }
-    if(FIVELETTER.includes(idvals) || isNumeric(id)){
-        // e.click()
+    if(FIVELETTER.includes(idvals) || /^\d+$/.test(id)){
+        e.click()
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);

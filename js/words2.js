@@ -3987,5 +3987,9 @@ const FOURLETTER =[
     'zoos',
     'zori',
     'zouk',
-    'zyme'
+    'zyme',
+
+    'dick',
+    'butt',
+    'jedi',
     ]
