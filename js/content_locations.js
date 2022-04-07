@@ -36,7 +36,7 @@ function labelRarity(element, key, toClick) {
 			case 'Rare':        element.style = 'background-color:'+GOLD; break;
 			case 'Mythic Rare': 
                 element.style = 'background-color:'+RED; 
-                toClick.click()
+                // toClick.click()
                 break;
 		}
 	}
@@ -75,7 +75,7 @@ function ShowEggId(e) {
     //     textEggId = createTextElement(id, 'yellow');
     // }
     if(FIVELETTER.includes(idvals) || isNumeric(id)){
-        e.click()
+        // e.click()
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);
