@@ -3996,4 +3996,7 @@ const FOURLETTER =[
     'thor',
     'elsa',
     'adam',
+    'fuck',
+    'damn',
+    'shit'
     ]
