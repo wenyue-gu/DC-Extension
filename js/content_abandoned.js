@@ -24,16 +24,21 @@ function ShowEggId(e) {
     }
     let textEggId = createTextElement(id);
     let idvals = id.replace("0", "o").replace("0", "o").replace("0", "o").replace("0", "o").replace("0", "o").toLowerCase()
-    // if(id ==="4kqe0" || id ==="3KOAJ"|| id ==="B7B2x"|| id ==="aD8nc"|| id ==="ecLJZ"|| id ==="TISU1"|| id ==="XEeeB"){
-    //     e.click()
-    // }
+    if(id ==="39w39" || id ==="3KOAJ"|| id ==="B7B2x"|| id ==="aD8nc"|| id ==="ecLJZ"|| id ==="TISU1"|| id ==="XEeeB"){
+        e.click()
+        // console.log("special "+id)
+        window.history.go(0)
+    }
     if(FOURLETTER.indexOf(idvals.substring(0,4))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
         e.click()
+        // console.log("4 let "+id)
+        window.history.go(0)
         textEggId = createTextElement(id, 'yellow');
     }
-
     if(FIVELETTER.includes(idvals) || /^\d+$/.test(id)){
         e.click()
+        // console.log("5 let "+id)
+        window.history.go(0)
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);

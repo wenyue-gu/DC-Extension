@@ -9034,6 +9034,26 @@ const FIVELETTER=[
     'schen',
     'avril',
     'fucks',
-    'shits'
+    'shits',
+    'jesus',
+    'reimu',
+    'conan',
+    'bucky',
+    'emily',
+    'sherry',
+    'burgr',
+    'evans',
+    'holms',
+    'watsn',
+    'merln',
+    'mrlin',
+    'helen',
+    'donot',
+    'freya',
+    'pipio',
+    'odeen',
+    'infni',
+    'infis',
+    'ubume'
     ]
     

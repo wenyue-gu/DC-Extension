@@ -64,7 +64,10 @@ function ShowEggId(e) {
     // console.log(idvals)
     // console.log(FOURLETTER.indexOf(idvals.substring(0,4)))
     // console.log(FOURLETTER.indexOf(idvals.substring(1)))
+
     if(FOURLETTER.indexOf(idvals.substring(0,4))>=0 || FOURLETTER.indexOf(idvals.substring(1))>=0){
+        e.click()
+        window.history.go(0)
         textEggId = createTextElement(id, 'yellow');
     }
     // if(FOURLETTER.inlcudes(val2)){
@@ -72,6 +75,7 @@ function ShowEggId(e) {
     // }
     if(FIVELETTER.includes(idvals) || /^\d+$/.test(id)){
         e.click()
+        window.history.go(0)
         textEggId = createTextElement(id, 'red');
     }
     e.appendChild(textEggId);
